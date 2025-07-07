@@ -12,18 +12,69 @@
 
 ## students
 
+-id
+-name
+-surname
+-student_code
+
 ### detail_student
+
+-id
+-student_id
+-mail
+-phone
+-address
 
 ## teachers
 
+-id
+-name
+-surname
+-teacher_code
+-subject
+
 ### detail_teacher
+
+-id
+-teacher_id
+-mail
+-phone
+-address
 
 ## departments
 
+-id
+-name
+-department_code
+-department_address
+
 ## degree_course
+
+-id
+-department_id
+-name
+-degree_course_code
 
 ## course
 
+-id
+-name
+-course_length
+-course_credits
+
 ## exams
 
+-id
+-student_id
+-teacher_id
+-course_id
+-date
+-subscribers
+
 ## results
+
+-id
+-student_id
+-exam_id
+-type_of_exam
+-vote
