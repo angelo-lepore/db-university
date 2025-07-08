@@ -13,6 +13,7 @@
 ## students
 
 -id
+-degree_course_id
 -name
 -surname
 -student_code
@@ -58,6 +59,7 @@
 ## course
 
 -id
+-degree_course_id
 -name
 -course_length
 -course_credits
@@ -65,16 +67,6 @@
 ## exams
 
 -id
--student_id
--teacher_id
 -course_id
 -date
 -subscribers
-
-## results
-
--id
--student_id
--exam_id
--type_of_exam
--vote
