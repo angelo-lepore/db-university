@@ -3,7 +3,7 @@
 ```sql
 SELECT *
 FROM `students`
-WHERE YEAR(date_of_birth) = "1990%";
+WHERE YEAR(date_of_birth) = 1990;
 ```
 
 2. Selezionare tutti i corsi che valgono più di 10 crediti (479)
@@ -36,8 +36,8 @@ AND `year` = 1;
 ```sql
 SELECT *
 FROM `exams`
-WHERE `date` = '2020-06-20'
-AND `hour` > '14:00:00';
+WHERE `date` = "2020-06-20"
+AND HOUR(hour) >= 14;
 ```
 
 6. Selezionare tutti i corsi di laurea magistrale (38)
@@ -45,20 +45,20 @@ AND `hour` > '14:00:00';
 ```sql
 SELECT *
 FROM `degrees`
-WHERE `level` = 'magistrale';
+WHERE `level` = "magistrale";
 ```
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
 ```sql
-SELECT *
+SELECT COUNT(*) AS "number_of_departments"
 FROM `departments`;
 ```
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
 ```sql
-SELECT *
+SELECT COUNT(*) AS "number_of_teachers_without_phone"
 FROM `teachers`
 WHERE `phone` IS NULL;
 ```
